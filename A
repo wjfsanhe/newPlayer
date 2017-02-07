@@ -1,0 +1,626 @@
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/asm/ioctls.h:50:#define TCSETS2		_IOW('T',0x2B, struct termios2)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/asm/ioctls.h:51:#define TCSETSW2	_IOW('T',0x2C, struct termios2)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/asm/ioctls.h:52:#define TCSETSF2	_IOW('T',0x2D, struct termios2)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/asm/ioctls.h:54:#define TIOCSPTLCK	_IOW('T',0x31, int)  /* Lock/unlock Pty */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/sfnt_info.h:207:	SNDRV_EMUX_IOCTL_LOAD_PATCH = _IOWR('H', 0x81, struct soundfont_patch_info),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/sfnt_info.h:210:	SNDRV_EMUX_IOCTL_MEM_AVAIL = _IOW('H', 0x84, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/sfnt_info.h:211:	SNDRV_EMUX_IOCTL_MISC_MODE = _IOWR('H', 0x84, struct snd_emux_misc_mode),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/hdsp.h:76:#define SNDRV_HDSP_IOCTL_UPLOAD_FIRMWARE _IOW('H', 0x42, struct hdsp_firmware)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/emu10k1.h:348:#define SNDRV_EMU10K1_IOCTL_CODE_POKE	_IOW ('H', 0x11, struct snd_emu10k1_fx8010_code)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/emu10k1.h:349:#define SNDRV_EMU10K1_IOCTL_CODE_PEEK	_IOWR('H', 0x12, struct snd_emu10k1_fx8010_code)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/emu10k1.h:350:#define SNDRV_EMU10K1_IOCTL_TRAM_SETUP	_IOW ('H', 0x20, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/emu10k1.h:351:#define SNDRV_EMU10K1_IOCTL_TRAM_POKE	_IOW ('H', 0x21, struct snd_emu10k1_fx8010_tram)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/emu10k1.h:352:#define SNDRV_EMU10K1_IOCTL_TRAM_PEEK	_IOWR('H', 0x22, struct snd_emu10k1_fx8010_tram)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/emu10k1.h:353:#define SNDRV_EMU10K1_IOCTL_PCM_POKE	_IOW ('H', 0x30, struct snd_emu10k1_fx8010_pcm_rec)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/emu10k1.h:354:#define SNDRV_EMU10K1_IOCTL_PCM_PEEK	_IOWR('H', 0x31, struct snd_emu10k1_fx8010_pcm_rec)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/emu10k1.h:359:#define SNDRV_EMU10K1_IOCTL_SINGLE_STEP	_IOW ('H', 0x83, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/sscape_ioctl.h:18:#define SND_SSCAPE_LOAD_BOOTB  _IOWR('P', 100, struct sscape_bootblock)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/sscape_ioctl.h:19:#define SND_SSCAPE_LOAD_MCODE  _IOW ('P', 101, struct sscape_microcode)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:115:	SNDRV_HWDEP_IOCTL_DSP_LOAD   = _IOW('H', 0x03, struct snd_hwdep_dsp_image)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:429:	SNDRV_PCM_IOCTL_TSTAMP = _IOW('A', 0x02, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:430:	SNDRV_PCM_IOCTL_TTSTAMP = _IOW('A', 0x03, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:431:	SNDRV_PCM_IOCTL_HW_REFINE = _IOWR('A', 0x10, struct snd_pcm_hw_params),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:432:	SNDRV_PCM_IOCTL_HW_PARAMS = _IOWR('A', 0x11, struct snd_pcm_hw_params),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:434:	SNDRV_PCM_IOCTL_SW_PARAMS = _IOWR('A', 0x13, struct snd_pcm_sw_params),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:438:	SNDRV_PCM_IOCTL_SYNC_PTR = _IOWR('A', 0x23, struct snd_pcm_sync_ptr),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:445:	SNDRV_PCM_IOCTL_PAUSE = _IOW('A', 0x45, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:446:	SNDRV_PCM_IOCTL_REWIND = _IOW('A', 0x46, snd_pcm_uframes_t),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:449:	SNDRV_PCM_IOCTL_FORWARD = _IOW('A', 0x49, snd_pcm_uframes_t),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:450:	SNDRV_PCM_IOCTL_WRITEI_FRAMES = _IOW('A', 0x50, struct snd_xferi),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:452:	SNDRV_PCM_IOCTL_WRITEN_FRAMES = _IOW('A', 0x52, struct snd_xfern),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:454:	SNDRV_PCM_IOCTL_LINK = _IOW('A', 0x60, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:516:	SNDRV_RAWMIDI_IOCTL_PARAMS = _IOWR('W', 0x10, struct snd_rawmidi_params),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:517:	SNDRV_RAWMIDI_IOCTL_STATUS = _IOWR('W', 0x20, struct snd_rawmidi_status),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:518:	SNDRV_RAWMIDI_IOCTL_DROP = _IOW('W', 0x30, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:519:	SNDRV_RAWMIDI_IOCTL_DRAIN = _IOW('W', 0x31, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:630:	SNDRV_TIMER_IOCTL_NEXT_DEVICE = _IOWR('T', 0x01, struct snd_timer_id),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:631:	SNDRV_TIMER_IOCTL_TREAD = _IOW('T', 0x02, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:632:	SNDRV_TIMER_IOCTL_GINFO = _IOWR('T', 0x03, struct snd_timer_ginfo),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:633:	SNDRV_TIMER_IOCTL_GPARAMS = _IOW('T', 0x04, struct snd_timer_gparams),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:634:	SNDRV_TIMER_IOCTL_GSTATUS = _IOWR('T', 0x05, struct snd_timer_gstatus),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:635:	SNDRV_TIMER_IOCTL_SELECT = _IOW('T', 0x10, struct snd_timer_select),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:637:	SNDRV_TIMER_IOCTL_PARAMS = _IOW('T', 0x12, struct snd_timer_params),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:825:	SNDRV_CTL_IOCTL_ELEM_LIST = _IOWR('U', 0x10, struct snd_ctl_elem_list),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:826:	SNDRV_CTL_IOCTL_ELEM_INFO = _IOWR('U', 0x11, struct snd_ctl_elem_info),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:827:	SNDRV_CTL_IOCTL_ELEM_READ = _IOWR('U', 0x12, struct snd_ctl_elem_value),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:828:	SNDRV_CTL_IOCTL_ELEM_WRITE = _IOWR('U', 0x13, struct snd_ctl_elem_value),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:829:	SNDRV_CTL_IOCTL_ELEM_LOCK = _IOW('U', 0x14, struct snd_ctl_elem_id),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:830:	SNDRV_CTL_IOCTL_ELEM_UNLOCK = _IOW('U', 0x15, struct snd_ctl_elem_id),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:831:	SNDRV_CTL_IOCTL_SUBSCRIBE_EVENTS = _IOWR('U', 0x16, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:832:	SNDRV_CTL_IOCTL_ELEM_ADD = _IOWR('U', 0x17, struct snd_ctl_elem_info),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:833:	SNDRV_CTL_IOCTL_ELEM_REPLACE = _IOWR('U', 0x18, struct snd_ctl_elem_info),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:834:	SNDRV_CTL_IOCTL_ELEM_REMOVE = _IOWR('U', 0x19, struct snd_ctl_elem_id),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:835:	SNDRV_CTL_IOCTL_TLV_READ = _IOWR('U', 0x1a, struct snd_ctl_tlv),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:836:	SNDRV_CTL_IOCTL_TLV_WRITE = _IOWR('U', 0x1b, struct snd_ctl_tlv),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:837:	SNDRV_CTL_IOCTL_TLV_COMMAND = _IOWR('U', 0x1c, struct snd_ctl_tlv),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:838:	SNDRV_CTL_IOCTL_HWDEP_NEXT_DEVICE = _IOWR('U', 0x20, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:841:	SNDRV_CTL_IOCTL_PCM_INFO = _IOWR('U', 0x31, struct snd_pcm_info),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:842:	SNDRV_CTL_IOCTL_PCM_PREFER_SUBDEVICE = _IOW('U', 0x32, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:843:	SNDRV_CTL_IOCTL_RAWMIDI_NEXT_DEVICE = _IOWR('U', 0x40, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:844:	SNDRV_CTL_IOCTL_RAWMIDI_INFO = _IOWR('U', 0x41, struct snd_rawmidi_info),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:845:	SNDRV_CTL_IOCTL_RAWMIDI_PREFER_SUBDEVICE = _IOW('U', 0x42, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:846:	SNDRV_CTL_IOCTL_POWER = _IOWR('U', 0xd0, int),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:904:	SNDRV_IOCTL_READV = _IOW('K', 0x00, struct snd_xferv),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound.h:905:	SNDRV_IOCTL_WRITEV = _IOW('K', 0x01, struct snd_xferv),
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound_fm.h:101:#define SNDRV_DM_FM_IOCTL_PLAY_NOTE	_IOW('H', 0x22, struct snd_dm_fm_note)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound_fm.h:102:#define SNDRV_DM_FM_IOCTL_SET_VOICE	_IOW('H', 0x23, struct snd_dm_fm_voice)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound_fm.h:103:#define SNDRV_DM_FM_IOCTL_SET_PARAMS	_IOW('H', 0x24, struct snd_dm_fm_params)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound_fm.h:104:#define SNDRV_DM_FM_IOCTL_SET_MODE	_IOW('H', 0x25, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asound_fm.h:106:#define SNDRV_DM_FM_IOCTL_SET_CONNECTION	_IOW('H', 0x26, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:574:#define SNDRV_SEQ_IOCTL_SYSTEM_INFO	_IOWR('S', 0x02, struct snd_seq_system_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:575:#define SNDRV_SEQ_IOCTL_RUNNING_MODE	_IOWR('S', 0x03, struct snd_seq_running_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:577:#define SNDRV_SEQ_IOCTL_GET_CLIENT_INFO	_IOWR('S', 0x10, struct snd_seq_client_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:578:#define SNDRV_SEQ_IOCTL_SET_CLIENT_INFO	_IOW ('S', 0x11, struct snd_seq_client_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:580:#define SNDRV_SEQ_IOCTL_CREATE_PORT	_IOWR('S', 0x20, struct snd_seq_port_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:581:#define SNDRV_SEQ_IOCTL_DELETE_PORT	_IOW ('S', 0x21, struct snd_seq_port_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:582:#define SNDRV_SEQ_IOCTL_GET_PORT_INFO	_IOWR('S', 0x22, struct snd_seq_port_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:583:#define SNDRV_SEQ_IOCTL_SET_PORT_INFO	_IOW ('S', 0x23, struct snd_seq_port_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:585:#define SNDRV_SEQ_IOCTL_SUBSCRIBE_PORT	_IOW ('S', 0x30, struct snd_seq_port_subscribe)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:586:#define SNDRV_SEQ_IOCTL_UNSUBSCRIBE_PORT _IOW ('S', 0x31, struct snd_seq_port_subscribe)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:588:#define SNDRV_SEQ_IOCTL_CREATE_QUEUE	_IOWR('S', 0x32, struct snd_seq_queue_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:589:#define SNDRV_SEQ_IOCTL_DELETE_QUEUE	_IOW ('S', 0x33, struct snd_seq_queue_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:590:#define SNDRV_SEQ_IOCTL_GET_QUEUE_INFO	_IOWR('S', 0x34, struct snd_seq_queue_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:591:#define SNDRV_SEQ_IOCTL_SET_QUEUE_INFO	_IOWR('S', 0x35, struct snd_seq_queue_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:592:#define SNDRV_SEQ_IOCTL_GET_NAMED_QUEUE	_IOWR('S', 0x36, struct snd_seq_queue_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:593:#define SNDRV_SEQ_IOCTL_GET_QUEUE_STATUS _IOWR('S', 0x40, struct snd_seq_queue_status)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:594:#define SNDRV_SEQ_IOCTL_GET_QUEUE_TEMPO	_IOWR('S', 0x41, struct snd_seq_queue_tempo)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:595:#define SNDRV_SEQ_IOCTL_SET_QUEUE_TEMPO	_IOW ('S', 0x42, struct snd_seq_queue_tempo)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:596:#define SNDRV_SEQ_IOCTL_GET_QUEUE_OWNER	_IOWR('S', 0x43, struct snd_seq_queue_owner)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:597:#define SNDRV_SEQ_IOCTL_SET_QUEUE_OWNER	_IOW ('S', 0x44, struct snd_seq_queue_owner)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:598:#define SNDRV_SEQ_IOCTL_GET_QUEUE_TIMER	_IOWR('S', 0x45, struct snd_seq_queue_timer)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:599:#define SNDRV_SEQ_IOCTL_SET_QUEUE_TIMER	_IOW ('S', 0x46, struct snd_seq_queue_timer)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:601:#define SNDRV_SEQ_IOCTL_GET_QUEUE_SYNC	_IOWR('S', 0x53, struct snd_seq_queue_sync)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:602:#define SNDRV_SEQ_IOCTL_SET_QUEUE_SYNC	_IOW ('S', 0x54, struct snd_seq_queue_sync)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:604:#define SNDRV_SEQ_IOCTL_GET_QUEUE_CLIENT	_IOWR('S', 0x49, struct snd_seq_queue_client)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:605:#define SNDRV_SEQ_IOCTL_SET_QUEUE_CLIENT	_IOW ('S', 0x4a, struct snd_seq_queue_client)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:606:#define SNDRV_SEQ_IOCTL_GET_CLIENT_POOL	_IOWR('S', 0x4b, struct snd_seq_client_pool)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:607:#define SNDRV_SEQ_IOCTL_SET_CLIENT_POOL	_IOW ('S', 0x4c, struct snd_seq_client_pool)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:608:#define SNDRV_SEQ_IOCTL_REMOVE_EVENTS	_IOW ('S', 0x4e, struct snd_seq_remove_events)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:609:#define SNDRV_SEQ_IOCTL_QUERY_SUBS	_IOWR('S', 0x4f, struct snd_seq_query_subs)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:610:#define SNDRV_SEQ_IOCTL_GET_SUBSCRIPTION	_IOWR('S', 0x50, struct snd_seq_port_subscribe)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:611:#define SNDRV_SEQ_IOCTL_QUERY_NEXT_CLIENT	_IOWR('S', 0x51, struct snd_seq_client_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/asequencer.h:612:#define SNDRV_SEQ_IOCTL_QUERY_NEXT_PORT	_IOWR('S', 0x52, struct snd_seq_port_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/sb16_csp.h:102:#define SNDRV_SB_CSP_IOCTL_LOAD_CODE	_IOW('H', 0x11, struct snd_sb_csp_microcode)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sound/sb16_csp.h:106:#define SNDRV_SB_CSP_IOCTL_START		_IOW('H', 0x13, struct snd_sb_csp_start)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/net/if_ppp.h:140:#define	PPPIOCSFLAGS	_IOW('t', 89, int)	/* set configuration flags */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/net/if_ppp.h:142:#define	PPPIOCSASYNCMAP	_IOW('t', 87, int)	/* set async map */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/net/if_ppp.h:145:#define	PPPIOCSRASYNCMAP _IOW('t', 84, int)	/* set receive async map */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/net/if_ppp.h:147:#define	PPPIOCSMRU	_IOW('t', 82, int)	/* set max receive unit */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/net/if_ppp.h:148:#define	PPPIOCSMAXCID	_IOW('t', 81, int)	/* set VJ max slot ID */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/net/if_ppp.h:150:#define PPPIOCSXASYNCMAP _IOW('t', 79, ext_accm) /* set extended ACCM */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/net/if_ppp.h:152:#define PPPIOCSCOMPRESS	_IOW('t', 77, struct ppp_option_data)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/net/if_ppp.h:153:#define PPPIOCGNPMODE	_IOWR('t', 76, struct npioctl) /* get NP mode */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/net/if_ppp.h:154:#define PPPIOCSNPMODE	_IOW('t', 75, struct npioctl)  /* set NP mode */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/net/if_ppp.h:156:#define PPPIOCSDEBUG	_IOW('t', 64, int)	/* Set debug level */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ext2_fs.h:171:#define	EXT2_IOC_SETRSVSZ		_IOW('f', 6, long)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/usbdevice_fs.h:130:#define USBDEVFS_CONTROL           _IOWR('U', 0, struct usbdevfs_ctrltransfer)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/usbdevice_fs.h:131:#define USBDEVFS_BULK              _IOWR('U', 2, struct usbdevfs_bulktransfer)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/usbdevice_fs.h:135:#define USBDEVFS_GETDRIVER         _IOW('U', 8, struct usbdevfs_getdriver)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/usbdevice_fs.h:139:#define USBDEVFS_REAPURB           _IOW('U', 12, void *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/usbdevice_fs.h:140:#define USBDEVFS_REAPURB32         _IOW('U', 12, __u32)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/usbdevice_fs.h:141:#define USBDEVFS_REAPURBNDELAY     _IOW('U', 13, void *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/usbdevice_fs.h:142:#define USBDEVFS_REAPURBNDELAY32   _IOW('U', 13, __u32)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/usbdevice_fs.h:146:#define USBDEVFS_CONNECTINFO       _IOW('U', 17, struct usbdevfs_connectinfo)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/usbdevice_fs.h:147:#define USBDEVFS_IOCTL             _IOWR('U', 18, struct usbdevfs_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/usbdevice_fs.h:148:#define USBDEVFS_IOCTL32           _IOWR('U', 18, struct usbdevfs_ioctl32)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i8k.h:28:#define I8K_GET_SPEED		_IOWR('i', 0x85, size_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i8k.h:29:#define I8K_GET_FAN		_IOWR('i', 0x86, size_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i8k.h:30:#define I8K_SET_FAN		_IOWR('i', 0x87, size_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ncp_fs.h:108:#define	NCP_IOC_GETMOUNTUID		_IOW('n', 2, __kernel_old_uid_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ncp_fs.h:109:#define NCP_IOC_GETMOUNTUID2		_IOW('n', 2, unsigned long)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ncp_fs.h:114:#define NCP_IOC_GET_FS_INFO             _IOWR('n', 4, struct ncp_fs_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ncp_fs.h:116:#define NCP_IOC_GET_FS_INFO_V2		_IOWR('n', 4, struct ncp_fs_info_v2)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ncp_fs.h:120:#define NCP_IOC_SET_SIGN_WANTED		_IOW('n', 6, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ncp_fs.h:124:#define NCP_IOC_GETROOT			_IOW('n', 8, struct ncp_setroot_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ncp_fs.h:127:#define NCP_IOC_GETOBJECTNAME		_IOWR('n', 9, struct ncp_objectname_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ncp_fs.h:129:#define NCP_IOC_GETPRIVATEDATA		_IOWR('n', 10, struct ncp_privatedata_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ncp_fs.h:132:#define NCP_IOC_GETCHARSETS		_IOWR('n', 11, struct ncp_nls_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ncp_fs.h:135:#define NCP_IOC_GETDENTRYTTL		_IOW('n', 12, __u32)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atm_idt77105.h:25:#define IDT77105_GETSTAT	_IOW('a',ATMIOC_PHYPRV+2,struct atmif_sioc)	/* get stats */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atm_idt77105.h:26:#define IDT77105_GETSTATZ	_IOW('a',ATMIOC_PHYPRV+3,struct atmif_sioc)	/* get stats and zero */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/auto_fs.h:76:#define AUTOFS_IOC_SETTIMEOUT _IOWR(0x93,0x64,unsigned long)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ipmi.h:337:#define IPMICTL_RECEIVE_MSG		_IOWR(IPMI_IOC_MAGIC, 12,	\
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ipmi.h:345:#define IPMICTL_RECEIVE_MSG_TRUNC	_IOWR(IPMI_IOC_MAGIC, 11,	\
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ipmi.h:451:#define IPMICTL_SET_MAINTENANCE_MODE_CMD	_IOW(IPMI_IOC_MAGIC, 31, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/cciss_ioctl.h:193:#define CCISS_SETINTINFO _IOW(CCISS_IOC_MAGIC, 3, cciss_coalint_struct)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/cciss_ioctl.h:196:#define CCISS_SETNODENAME _IOW(CCISS_IOC_MAGIC, 5, NodeName_type)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/cciss_ioctl.h:203:#define CCISS_PASSTHRU	   _IOWR(CCISS_IOC_MAGIC, 11, IOCTL_Command_struct)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/cciss_ioctl.h:207:#define CCISS_REGNEWDISK  _IOW(CCISS_IOC_MAGIC, 13, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/cciss_ioctl.h:212:#define CCISS_BIG_PASSTHRU _IOWR(CCISS_IOC_MAGIC, 18, BIG_IOCTL_Command_struct)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/capi.h:29:#define	CAPI_REGISTER	_IOW('C',0x01,struct capi_register_params)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/capi.h:37:#define	CAPI_GET_MANUFACTURER	_IOWR('C',0x06,int)	/* broken: wanted size 64 (CAPI_MANUFACTURER_LEN) */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/capi.h:50:#define CAPI_GET_VERSION	_IOWR('C',0x07,struct capi_version)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/capi.h:57:#define CAPI_GET_SERIAL		_IOWR('C',0x08,int)	/* broken: wanted size 8 (CAPI_SERIAL_LEN) */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/capi.h:74:#define CAPI_GET_PROFILE	_IOWR('C',0x09,struct capi_profile)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/capi.h:85:#define CAPI_MANUFACTURER_CMD	_IOWR('C',0x20, struct capi_manufacturer_cmd)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/watchdog.h:29:#define	WDIOC_SETTIMEOUT        _IOWR(WATCHDOG_IOCTL_BASE, 6, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/watchdog.h:31:#define	WDIOC_SETPRETIMEOUT	_IOWR(WATCHDOG_IOCTL_BASE, 8, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/rtc.h:79:#define RTC_ALM_SET	_IOW('p', 0x07, struct rtc_time) /* Set alarm time  */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/rtc.h:82:#define RTC_SET_TIME	_IOW('p', 0x0a, struct rtc_time) /* Set RTC time    */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/rtc.h:84:#define RTC_IRQP_SET	_IOW('p', 0x0c, unsigned long)	 /* Set IRQ rate    */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/rtc.h:86:#define RTC_EPOCH_SET	_IOW('p', 0x0e, unsigned long)	 /* Set epoch       */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/rtc.h:88:#define RTC_WKALM_SET	_IOW('p', 0x0f, struct rtc_wkalrm)/* Set wakeup alarm*/
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/rtc.h:92:#define RTC_PLL_SET	_IOW('p', 0x12, struct rtc_pll_info)  /* Set PLL correction */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:54:#define ATM_GETLINKRATE	_IOW('a',ATMIOC_ITF+1,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:56:#define ATM_GETNAMES	_IOW('a',ATMIOC_ITF+3,struct atm_iobuf)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:58:#define ATM_GETTYPE	_IOW('a',ATMIOC_ITF+4,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:60:#define ATM_GETESI	_IOW('a',ATMIOC_ITF+5,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:62:#define ATM_GETADDR	_IOW('a',ATMIOC_ITF+6,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:64:#define ATM_RSTADDR	_IOW('a',ATMIOC_ITF+7,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:66:#define ATM_ADDADDR	_IOW('a',ATMIOC_ITF+8,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:68:#define ATM_DELADDR	_IOW('a',ATMIOC_ITF+9,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:70:#define ATM_GETCIRANGE	_IOW('a',ATMIOC_ITF+10,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:72:#define ATM_SETCIRANGE	_IOW('a',ATMIOC_ITF+11,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:74:#define ATM_SETESI	_IOW('a',ATMIOC_ITF+12,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:76:#define ATM_SETESIF	_IOW('a',ATMIOC_ITF+13,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:78:#define ATM_ADDLECSADDR	_IOW('a', ATMIOC_ITF+14, struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:80:#define ATM_DELLECSADDR	_IOW('a', ATMIOC_ITF+15, struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:82:#define ATM_GETLECSADDR	_IOW('a', ATMIOC_ITF+16, struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:85:#define ATM_GETSTAT	_IOW('a',ATMIOC_SARCOM+0,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:87:#define ATM_GETSTATZ	_IOW('a',ATMIOC_SARCOM+1,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:89:#define ATM_GETLOOP	_IOW('a',ATMIOC_SARCOM+2,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:91:#define ATM_SETLOOP	_IOW('a',ATMIOC_SARCOM+3,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:93:#define ATM_QUERYLOOP	_IOW('a',ATMIOC_SARCOM+4,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:95:#define ATM_SETSC	_IOW('a',ATMIOC_SPECIAL+1,int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:97:#define ATM_SETBACKEND	_IOW('a',ATMIOC_SPECIAL+2,atm_backend_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:99:#define ATM_NEWBACKENDIF _IOW('a',ATMIOC_SPECIAL+3,atm_backend_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:101:#define ATM_ADDPARTY  	_IOW('a', ATMIOC_SPECIAL+4,struct atm_iobuf)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmdev.h:103:#define ATM_DROPPARTY 	_IOW('a', ATMIOC_SPECIAL+5,int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:100:#define PHONE_CAPABILITIES_CHECK        _IOW ('q', 0x82, struct phone_capability *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:115:#define PHONE_MAXRINGS			_IOW ('q', 0x85, char)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:116:#define PHONE_RING_CADENCE		_IOW ('q', 0x86, short)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:118:#define PHONE_RING_START		_IOW ('q', 0x87, PHONE_CID *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:123:#define PHONE_REC_CODEC			_IOW ('q', 0x89, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:126:#define PHONE_REC_DEPTH			_IOW ('q', 0x8C, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:127:#define PHONE_FRAME			_IOW ('q', 0x8D, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:128:#define PHONE_REC_VOLUME		_IOW ('q', 0x8E, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:129:#define PHONE_REC_VOLUME_LINEAR		_IOW ('q', 0xDB, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:132:#define PHONE_PLAY_CODEC		_IOW ('q', 0x90, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:135:#define PHONE_PLAY_DEPTH		_IOW ('q', 0x93, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:136:#define PHONE_PLAY_VOLUME		_IOW ('q', 0x94, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:137:#define PHONE_PLAY_VOLUME_LINEAR	_IOW ('q', 0xDC, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:142:#define PHONE_DTMF_OOB			_IOW ('q', 0x99, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:144:#define PHONE_PLAY_TONE			_IOW ('q', 0x9B, char)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:145:#define PHONE_SET_TONE_ON_TIME		_IOW ('q', 0x9C, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:146:#define PHONE_SET_TONE_OFF_TIME		_IOW ('q', 0x9D, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:155:#define PHONE_PSTN_SET_STATE		_IOW ('q', 0xA4, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:170:#define PHONE_WINK_DURATION		_IOW ('q', 0xA6, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:171:#define PHONE_WINK			_IOW ('q', 0xAA, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:200:#define PHONE_QUERY_CODEC               _IOWR ('q', 0xA7, struct phone_codec_data *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/telephony.h:218:#define PHONE_VAD			_IOW ('q', 0xA9, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/isdn_ppp.h:30:#define PPPIOCGCALLINFO _IOWR('t',128,struct pppcallinfo)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/isdn_ppp.h:31:#define PPPIOCBUNDLE   _IOW('t',129,int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/isdn_ppp.h:33:#define PPPIOCSMPFLAGS _IOW('t',131,int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/isdn_ppp.h:34:#define PPPIOCSMPMTU   _IOW('t',132,int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/isdn_ppp.h:35:#define PPPIOCSMPMRU   _IOW('t',133,int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/isdn_ppp.h:37:#define PPPIOCSCOMPRESSOR _IOW('t',135,int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/gigaset_dev.h:25:#define GIGASET_REDIR    _IOWR (GIGASET_IOCTL, 0, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/gigaset_dev.h:26:#define GIGASET_CONFIG   _IOWR (GIGASET_IOCTL, 1, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/gigaset_dev.h:27:#define GIGASET_BRKCHARS _IOW  (GIGASET_IOCTL, 2, unsigned char[6]) //FIXME [6] okay?
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/gigaset_dev.h:28:#define GIGASET_VERSION  _IOWR (GIGASET_IOCTL, 3, unsigned[4])
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/mtio.h:127:#define	MTIOCTOP	_IOW('m', 1, struct mtop)	/* do a mag tape op */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/pktcdvd.h:108:#define PACKET_CTRL_CMD		_IOWR(PACKET_IOCTL_MAGIC, 1, struct pkt_ctrl_command)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/input.h:56:#define EVIOCSREP		_IOW('E', 0x03, int[2])			/* set repeat settings */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/input.h:58:#define EVIOCSKEYCODE		_IOW('E', 0x04, int[2])			/* set keycode */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/input.h:71:#define EVIOCSABS(abs)		_IOW('E', 0xc0 + abs, struct input_absinfo)		/* set abs value/limits */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/input.h:74:#define EVIOCRMFF		_IOW('E', 0x81, int)			/* Erase a force effect */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/input.h:77:#define EVIOCGRAB		_IOW('E', 0x90, int)			/* Grab/Release device */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/serio.h:14:#define SPIOCSTYPE	_IOW('q', 0x01, unsigned long)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fb.h:22:#define FBIO_CURSOR            _IOWR('F', 0x08, struct fb_cursor)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/reiserfs_fs.h:2169:#define REISERFS_IOC_UNPACK		_IOW(0xCD,1,long)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/reiserfs_fs.h:2178:#define REISERFS_IOC32_UNPACK		_IOW(0xCD, 1, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/radeonfb.h:12:#define FBIO_RADEON_SET_MIRROR	_IOW('@', 4, size_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/chio.h:150:#define CHIOMOVE       _IOW('c', 1,struct changer_move)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/chio.h:151:#define CHIOEXCHANGE   _IOW('c', 2,struct changer_exchange)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/chio.h:152:#define CHIOPOSITION   _IOW('c', 3,struct changer_position)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/chio.h:154:#define CHIOSPICKER    _IOW('c', 5,int)                        /* not impl. */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/chio.h:156:#define CHIOGSTATUS    _IOW('c', 8,struct changer_element_status)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/chio.h:157:#define CHIOGELEM      _IOW('c',16,struct changer_get_element)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/chio.h:159:#define CHIOSVOLTAG    _IOW('c',18,struct changer_set_voltag)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/spi/spidev.h:107:#define SPI_IOC_MESSAGE(N) _IOW(SPI_IOC_MAGIC, 0, char[SPI_MSGSIZE(N)])
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/spi/spidev.h:112:#define SPI_IOC_WR_MODE			_IOW(SPI_IOC_MAGIC, 1, __u8)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/spi/spidev.h:116:#define SPI_IOC_WR_LSB_FIRST		_IOW(SPI_IOC_MAGIC, 2, __u8)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/spi/spidev.h:120:#define SPI_IOC_WR_BITS_PER_WORD	_IOW(SPI_IOC_MAGIC, 3, __u8)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/spi/spidev.h:124:#define SPI_IOC_WR_MAX_SPEED_HZ		_IOW(SPI_IOC_MAGIC, 4, __u32)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/coda.h:310:#define CIOC_KERNEL_VERSION _IOWR('c', 10, size_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/toshiba.h:25:#define TOSH_SMM _IOWR('t', 0x90, int)	/* broken: meant 24 bytes */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:135:#define	PPPIOCSFLAGS	_IOW('t', 89, int)	/* set configuration flags */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:137:#define	PPPIOCSASYNCMAP	_IOW('t', 87, int)	/* set async map */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:140:#define	PPPIOCSRASYNCMAP _IOW('t', 84, int)	/* set receive async map */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:142:#define	PPPIOCSMRU	_IOW('t', 82, int)	/* set max receive unit */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:143:#define	PPPIOCSMAXCID	_IOW('t', 81, int)	/* set VJ max slot ID */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:145:#define PPPIOCSXASYNCMAP _IOW('t', 79, ext_accm) /* set extended ACCM */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:147:#define PPPIOCSCOMPRESS	_IOW('t', 77, struct ppp_option_data)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:148:#define PPPIOCGNPMODE	_IOWR('t', 76, struct npioctl) /* get NP mode */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:149:#define PPPIOCSNPMODE	_IOW('t', 75, struct npioctl)  /* set NP mode */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:150:#define PPPIOCSPASS	_IOW('t', 71, struct sock_fprog) /* set pass filter */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:151:#define PPPIOCSACTIVE	_IOW('t', 70, struct sock_fprog) /* set active filt */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:153:#define PPPIOCSDEBUG	_IOW('t', 64, int)	/* Set debug level */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:155:#define PPPIOCNEWUNIT	_IOWR('t', 62, int)	/* create new ppp unit */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:156:#define PPPIOCATTACH	_IOW('t', 61, int)	/* attach to ppp unit */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:157:#define PPPIOCDETACH	_IOW('t', 60, int)	/* detach from ppp unit/chan */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:158:#define PPPIOCSMRRU	_IOW('t', 59, int)	/* set multilink MRU */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:159:#define PPPIOCCONNECT	_IOW('t', 58, int)	/* connect channel to unit */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_ppp.h:161:#define PPPIOCATTCHAN	_IOW('t', 56, int)	/* attach to ppp channel */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i2o-dev.h:34:#define I2OHRTGET		_IOWR(I2O_MAGIC_NUMBER,1,struct i2o_cmd_hrtlct)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i2o-dev.h:35:#define I2OLCTGET		_IOWR(I2O_MAGIC_NUMBER,2,struct i2o_cmd_hrtlct)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i2o-dev.h:36:#define I2OPARMSET		_IOWR(I2O_MAGIC_NUMBER,3,struct i2o_cmd_psetget)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i2o-dev.h:37:#define I2OPARMGET		_IOWR(I2O_MAGIC_NUMBER,4,struct i2o_cmd_psetget)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i2o-dev.h:38:#define I2OSWDL 		_IOWR(I2O_MAGIC_NUMBER,5,struct i2o_sw_xfer)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i2o-dev.h:39:#define I2OSWUL 		_IOWR(I2O_MAGIC_NUMBER,6,struct i2o_sw_xfer)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i2o-dev.h:40:#define I2OSWDEL		_IOWR(I2O_MAGIC_NUMBER,7,struct i2o_sw_xfer)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i2o-dev.h:42:#define I2OHTML 		_IOWR(I2O_MAGIC_NUMBER,9,struct i2o_html)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/i2o-dev.h:43:#define I2OEVTREG		_IOW(I2O_MAGIC_NUMBER,10,struct i2o_evt_id)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/sonypi.h:109:#define SONYPI_IOCSBRT		_IOW('v', 0, __u8)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/sonypi.h:125:#define SONYPI_IOCSBLUE		_IOW('v', 9, __u8)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/sonypi.h:129:#define SONYPI_IOCSFAN		_IOW('v', 11, __u8)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fs.h:211:#define BLKELVSET  _IOW(0x12,107,size_t)/* elevator set */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fs.h:217:#define BLKBSZSET  _IOW(0x12,113,size_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fs.h:219:#define BLKTRACESETUP _IOWR(0x12,115,struct blk_user_trace_setup)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fs.h:229:#define	FS_IOC_SETFLAGS			_IOW('f', 2, long)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fs.h:231:#define	FS_IOC_SETVERSION		_IOW('v', 2, long)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fs.h:233:#define FS_IOC32_SETFLAGS		_IOW('f', 2, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fs.h:235:#define FS_IOC32_SETVERSION		_IOW('v', 2, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atm_eni.h:18:#define ENI_MEMDUMP     _IOW('a',ATMIOC_SARPRV,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atm_eni.h:20:#define ENI_SETMULT	_IOW('a',ATMIOC_SARPRV+7,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:140:#define IXJCTL_SET_FILTER		_IOW ('q', 0xC7, IXJ_FILTER *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:141:#define IXJCTL_SET_FILTER_RAW		_IOW ('q', 0xDD, IXJ_FILTER_RAW *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:142:#define IXJCTL_GET_FILTER_HIST		_IOW ('q', 0xC8, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:143:#define IXJCTL_FILTER_CADENCE		_IOW ('q', 0xD6, IXJ_FILTER_CADENCE *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:300:#define IXJCTL_INIT_TONE		_IOW ('q', 0xC9, IXJ_TONE *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:354:#define IXJCTL_TONE_CADENCE		_IOW ('q', 0xCA, IXJ_CADENCE *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:377:#define IXJCTL_AEC_START		_IOW ('q', 0xCB, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:421:#define IXJCTL_SET_LED			_IOW ('q', 0xCE, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:422:#define IXJCTL_MIXER			_IOW ('q', 0xCF, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:541:#define IXJCTL_DAA_COEFF_SET		_IOW ('q', 0xD0, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:558:#define IXJCTL_PORT			_IOW ('q', 0xD1, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:581:#define IXJCTL_DAA_AGAIN		_IOW ('q', 0xD2, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:596:#define IXJCTL_CIDCW			_IOW ('q', 0xD9, PHONE_CID *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:616:#define IXJCTL_POTS_PSTN		_IOW ('q', 0xD5, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:639:#define IXJCTL_HZ                       _IOW ('q', 0xE0, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:640:#define IXJCTL_RATE                     _IOW ('q', 0xE1, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:647:#define IXJCTL_DTMF_PRESCALE		_IOW ('q', 0xE8, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:675:#define IXJCTL_SIGCTL			_IOW ('q', 0xE9, IXJ_SIGDEF *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:691:#define IXJCTL_SC_RXG			_IOW ('q', 0xEA, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:692:#define IXJCTL_SC_TXG			_IOW ('q', 0xEB, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:705:#define IXJCTL_INTERCOM_START 		_IOW ('q', 0xFD, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ixjuser.h:706:#define IXJCTL_INTERCOM_STOP  		_IOW ('q', 0xFE, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atm_nicstar.h:24:#define NS_GETPSTAT	_IOWR('a',ATMIOC_SARPRV+1,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atm_nicstar.h:26:#define NS_SETBUFLEV	_IOW('a',ATMIOC_SARPRV+2,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:158:#define HIDIOCGREPORT		_IOW('H', 0x07, struct hiddev_report_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:159:#define HIDIOCSREPORT		_IOW('H', 0x08, struct hiddev_report_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:160:#define HIDIOCGREPORTINFO	_IOWR('H', 0x09, struct hiddev_report_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:161:#define HIDIOCGFIELDINFO	_IOWR('H', 0x0A, struct hiddev_field_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:162:#define HIDIOCGUSAGE		_IOWR('H', 0x0B, struct hiddev_usage_ref)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:163:#define HIDIOCSUSAGE		_IOW('H', 0x0C, struct hiddev_usage_ref)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:164:#define HIDIOCGUCODE		_IOWR('H', 0x0D, struct hiddev_usage_ref)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:166:#define HIDIOCSFLAG		_IOW('H', 0x0F, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:167:#define HIDIOCGCOLLECTIONINDEX	_IOW('H', 0x10, struct hiddev_usage_ref)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:168:#define HIDIOCGCOLLECTIONINFO	_IOWR('H', 0x11, struct hiddev_collection_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:172:#define HIDIOCGUSAGES		_IOWR('H', 0x13, struct hiddev_usage_ref_multi)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hiddev.h:173:#define HIDIOCSUSAGES		_IOW('H', 0x14, struct hiddev_usage_ref_multi)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/phantom.h:29:#define PHN_GET_REG		_IOWR(PH_IOC_MAGIC, 0, struct phm_reg *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/phantom.h:30:#define PHN_SET_REG		_IOW(PH_IOC_MAGIC, 1, struct phm_reg *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/phantom.h:31:#define PHN_GET_REGS		_IOWR(PH_IOC_MAGIC, 2, struct phm_regs *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/phantom.h:32:#define PHN_SET_REGS		_IOW(PH_IOC_MAGIC, 3, struct phm_regs *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/phantom.h:37:#define PHN_GETREG		_IOWR(PH_IOC_MAGIC, 5, struct phm_reg)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/phantom.h:38:#define PHN_SETREG		_IOW(PH_IOC_MAGIC, 6, struct phm_reg)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/phantom.h:39:#define PHN_GETREGS		_IOWR(PH_IOC_MAGIC, 7, struct phm_regs)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/phantom.h:40:#define PHN_SETREGS		_IOW(PH_IOC_MAGIC, 8, struct phm_regs)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:58:#define UI_SET_EVBIT		_IOW(UINPUT_IOCTL_BASE, 100, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:59:#define UI_SET_KEYBIT		_IOW(UINPUT_IOCTL_BASE, 101, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:60:#define UI_SET_RELBIT		_IOW(UINPUT_IOCTL_BASE, 102, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:61:#define UI_SET_ABSBIT		_IOW(UINPUT_IOCTL_BASE, 103, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:62:#define UI_SET_MSCBIT		_IOW(UINPUT_IOCTL_BASE, 104, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:63:#define UI_SET_LEDBIT		_IOW(UINPUT_IOCTL_BASE, 105, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:64:#define UI_SET_SNDBIT		_IOW(UINPUT_IOCTL_BASE, 106, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:65:#define UI_SET_FFBIT		_IOW(UINPUT_IOCTL_BASE, 107, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:66:#define UI_SET_PHYS		_IOW(UINPUT_IOCTL_BASE, 108, char*)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:67:#define UI_SET_SWBIT		_IOW(UINPUT_IOCTL_BASE, 109, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:69:#define UI_BEGIN_FF_UPLOAD	_IOWR(UINPUT_IOCTL_BASE, 200, struct uinput_ff_upload)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:70:#define UI_END_FF_UPLOAD	_IOW(UINPUT_IOCTL_BASE, 201, struct uinput_ff_upload)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:71:#define UI_BEGIN_FF_ERASE	_IOWR(UINPUT_IOCTL_BASE, 202, struct uinput_ff_erase)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/uinput.h:72:#define UI_END_FF_ERASE		_IOW(UINPUT_IOCTL_BASE, 203, struct uinput_ff_erase)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atmbr2684.h:113:#define BR2684_SETFILT	_IOW( 'a', ATMIOC_BACKEND + 0, \
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/usb/g_printer.h:33:#define GADGET_SET_PRINTER_STATUS	_IOWR('g', 0x22, unsigned char)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:20:#define PPSETMODE	_IOW(PP_IOCTL, 0x80, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:24:#define PPWSTATUS	OBSOLETE__IOW(PP_IOCTL, 0x82, unsigned char)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:28:#define PPWCONTROL	_IOW(PP_IOCTL, 0x84, unsigned char)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:34:#define PPFCONTROL      _IOW(PP_IOCTL, 0x8e, struct ppdev_frob_struct)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:38:#define PPWDATA		_IOW(PP_IOCTL, 0x86, unsigned char)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:42:#define PPWECONTROL	OBSOLETE__IOW(PP_IOCTL, 0x88, unsigned char)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:46:#define PPWFIFO		OBSOLETE__IOW(PP_IOCTL, 0x8a, unsigned char)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:62:#define PPDATADIR	_IOW(PP_IOCTL, 0x90, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:65:#define PPNEGOT		_IOW(PP_IOCTL, 0x91, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:68:#define PPWCTLONIRQ	_IOW(PP_IOCTL, 0x92, unsigned char)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:74:#define PPSETPHASE	_IOW(PP_IOCTL, 0x94, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:78:#define PPSETTIME	_IOW(PP_IOCTL, 0x96, struct timeval)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/ppdev.h:89:#define PPSETFLAGS	_IOW(PP_IOCTL, 0x9b, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_tun.h:38:#define TUNSETNOCSUM  _IOW('T', 200, int) 
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_tun.h:39:#define TUNSETDEBUG   _IOW('T', 201, int) 
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_tun.h:40:#define TUNSETIFF     _IOW('T', 202, int) 
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_tun.h:41:#define TUNSETPERSIST _IOW('T', 203, int) 
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_tun.h:42:#define TUNSETOWNER   _IOW('T', 204, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_tun.h:43:#define TUNSETLINK    _IOW('T', 205, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_tun.h:44:#define TUNSETGROUP   _IOW('T', 206, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/smb_fs.h:18:#define SMB_IOC_NEWCONN                 _IOW('u', 2, struct smb_conn_opt)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videotext.h:22:#define VTXIOCCLRPAGE	_IOW  (0x81,  2, vtx_pagereq_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videotext.h:23:#define VTXIOCCLRFOUND	_IOW  (0x81,  3, vtx_pagereq_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videotext.h:24:#define VTXIOCPAGEREQ	_IOW  (0x81,  4, vtx_pagereq_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videotext.h:25:#define VTXIOCGETSTAT	_IOW  (0x81,  5, vtx_pagereq_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videotext.h:26:#define VTXIOCGETPAGE	_IOW  (0x81,  6, vtx_pagereq_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videotext.h:27:#define VTXIOCSTOPDAU	_IOW  (0x81,  7, vtx_pagereq_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videotext.h:32:#define VTXIOCSETVIRT	_IOW  (0x81, 12, long)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/hpet.h:20:#define	HPET_IRQFREQ	_IOW('h', 0x6, unsigned long)	/* IRQFREQ usec */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/matroxfb.h:18:#define MATROXFB_SET_OUTPUT_MODE	_IOW('n',0xFA,size_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/matroxfb.h:19:#define MATROXFB_GET_OUTPUT_MODE	_IOWR('n',0xFA,size_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/matroxfb.h:26:#define MATROXFB_SET_OUTPUT_CONNECTION	_IOW('n',0xF8,size_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/matroxfb.h:40:#define FBIO_WAITFORVSYNC	_IOW('F', 0x20, u_int32_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/video.h:238:#define VIDEO_STILLPICTURE         _IOW('o', 30, struct video_still_picture)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/video.h:247:#define VIDEO_SET_HIGHLIGHT        _IOW('o', 39, video_highlight_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/video.h:248:#define VIDEO_SET_SPU              _IOW('o', 50, video_spu_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/video.h:249:#define VIDEO_SET_SPU_PALETTE      _IOW('o', 51, video_spu_palette_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/video.h:271:#define VIDEO_COMMAND     	   _IOWR('o', 59, struct video_command)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/video.h:272:#define VIDEO_TRY_COMMAND 	   _IOWR('o', 60, struct video_command)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/frontend.h:256:#define FE_DISEQC_SEND_MASTER_CMD  _IOW('o', 63, struct dvb_diseqc_master_cmd)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/frontend.h:270:#define FE_SET_FRONTEND		   _IOW('o', 76, struct dvb_frontend_parameters)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/audio.h:116:#define AUDIO_SET_MIXER            _IOW('o', 14, audio_mixer_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/audio.h:119:#define AUDIO_SET_ATTRIBUTES       _IOW('o', 17, audio_attributes_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/audio.h:120:#define AUDIO_SET_KARAOKE          _IOW('o', 18, audio_karaoke_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/dmx.h:143:#define DMX_SET_FILTER           _IOW('o', 43, struct dmx_sct_filter_params)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/dmx.h:144:#define DMX_SET_PES_FILTER       _IOW('o', 44, struct dmx_pes_filter_params)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/dmx.h:148:#define DMX_SET_SOURCE           _IOW('o', 49, dmx_source_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/dmx.h:149:#define DMX_GET_STC              _IOWR('o', 50, struct dmx_stc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/net.h:39:#define NET_ADD_IF    _IOWR('o', 52, struct dvb_net_if)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/net.h:41:#define NET_GET_IF    _IOWR('o', 54, struct dvb_net_if)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/net.h:49:#define __NET_ADD_IF_OLD _IOWR('o', 52, struct __dvb_net_if_old)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/net.h:50:#define __NET_GET_IF_OLD _IOWR('o', 54, struct __dvb_net_if_old)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/ca.h:86:#define CA_SEND_MSG       _IOW('o', 133, ca_msg_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/ca.h:87:#define CA_SET_DESCR      _IOW('o', 134, ca_descr_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/ca.h:88:#define CA_SET_PID        _IOW('o', 135, ca_pid_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dvb/osd.h:140:#define OSD_SEND_CMD            _IOW('o', 160, osd_cmd_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/raid/md_u.h:30:#define ADD_NEW_DISK		_IOW (MD_MAJOR, 0x21, mdu_disk_info_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/raid/md_u.h:32:#define SET_ARRAY_INFO		_IOW (MD_MAJOR, 0x23, mdu_array_info_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/raid/md_u.h:40:#define SET_BITMAP_FILE		_IOW (MD_MAJOR, 0x2b, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/raid/md_u.h:43:#define RUN_ARRAY		_IOW (MD_MAJOR, 0x30, mdu_param_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/auto_fs4.h:97:#define AUTOFS_IOC_EXPIRE_MULTI		_IOW(0x93,0x66,int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/random.h:18:#define RNDADDTOENTCNT	_IOW( 'R', 0x01, int )
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/random.h:27:#define RNDADDENTROPY	_IOW( 'R', 0x03, int [2] )
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_encoder.h:15:#define	ENCODER_SET_NORM	_IOW('e', 2, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_encoder.h:16:#define	ENCODER_SET_INPUT	_IOW('e', 3, int)	/* 0 <= input < #inputs */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_encoder.h:17:#define	ENCODER_SET_OUTPUT	_IOW('e', 4, int)	/* 0 <= output < #outputs */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_encoder.h:18:#define	ENCODER_ENABLE_OUTPUT	_IOW('e', 5, int)	/* boolean output enable control */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/udf_fs_i.h:19:#define UDF_RELOCATE_BLOCKS _IOWR('l', 0x43, long)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/cm4000_cs.h:42:#define	CM_IOCGATR		_IOWR(CM_IOC_MAGIC, 1, atreq_t *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/cm4000_cs.h:43:#define	CM_IOCSPTS		_IOW (CM_IOC_MAGIC, 2, ptsreq_t *)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/cm4000_cs.h:47:#define CM_IOSDBGLVL            _IOW(CM_IOC_MAGIC, 250, int*)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atm_zatm.h:18:#define ZATM_GETPOOL	_IOW('a',ATMIOC_SARPRV+1,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atm_zatm.h:20:#define ZATM_GETPOOLZ	_IOW('a',ATMIOC_SARPRV+2,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atm_zatm.h:22:#define ZATM_SETPOOL	_IOW('a',ATMIOC_SARPRV+3,struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fd.h:44:#define FDSETPRM _IOW(2, 0x42, struct floppy_struct) 
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fd.h:48:#define FDDEFPRM _IOW(2, 0x43, struct floppy_struct) 
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fd.h:71:#define	FDFMTTRK _IOW(2,0x48, struct format_descr)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fd.h:105:#define FDSETMAXERRS _IOW(2, 0x4c, struct floppy_max_errors)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/fd.h:184:#define FDSETDRVPRM _IOW(2, 0x90, struct floppy_drive_params)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:168:#define FW_CDEV_IOC_GET_INFO		_IOWR('#', 0x00, struct fw_cdev_get_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:169:#define FW_CDEV_IOC_SEND_REQUEST	_IOW('#', 0x01, struct fw_cdev_send_request)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:170:#define FW_CDEV_IOC_ALLOCATE		_IOWR('#', 0x02, struct fw_cdev_allocate)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:171:#define FW_CDEV_IOC_DEALLOCATE		_IOW('#', 0x03, struct fw_cdev_deallocate)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:172:#define FW_CDEV_IOC_SEND_RESPONSE	_IOW('#', 0x04, struct fw_cdev_send_response)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:173:#define FW_CDEV_IOC_INITIATE_BUS_RESET	_IOW('#', 0x05, struct fw_cdev_initiate_bus_reset)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:174:#define FW_CDEV_IOC_ADD_DESCRIPTOR	_IOWR('#', 0x06, struct fw_cdev_add_descriptor)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:175:#define FW_CDEV_IOC_REMOVE_DESCRIPTOR	_IOW('#', 0x07, struct fw_cdev_remove_descriptor)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:177:#define FW_CDEV_IOC_CREATE_ISO_CONTEXT	_IOWR('#', 0x08, struct fw_cdev_create_iso_context)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:178:#define FW_CDEV_IOC_QUEUE_ISO		_IOWR('#', 0x09, struct fw_cdev_queue_iso)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:179:#define FW_CDEV_IOC_START_ISO		_IOW('#', 0x0a, struct fw_cdev_start_iso)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/firewire-cdev.h:180:#define FW_CDEV_IOC_STOP_ISO		_IOW('#', 0x0b, struct fw_cdev_stop_iso)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:237:#define DM_VERSION       _IOWR(DM_IOCTL, DM_VERSION_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:238:#define DM_REMOVE_ALL    _IOWR(DM_IOCTL, DM_REMOVE_ALL_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:239:#define DM_LIST_DEVICES  _IOWR(DM_IOCTL, DM_LIST_DEVICES_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:241:#define DM_DEV_CREATE    _IOWR(DM_IOCTL, DM_DEV_CREATE_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:242:#define DM_DEV_REMOVE    _IOWR(DM_IOCTL, DM_DEV_REMOVE_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:243:#define DM_DEV_RENAME    _IOWR(DM_IOCTL, DM_DEV_RENAME_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:244:#define DM_DEV_SUSPEND   _IOWR(DM_IOCTL, DM_DEV_SUSPEND_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:245:#define DM_DEV_STATUS    _IOWR(DM_IOCTL, DM_DEV_STATUS_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:246:#define DM_DEV_WAIT      _IOWR(DM_IOCTL, DM_DEV_WAIT_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:248:#define DM_TABLE_LOAD    _IOWR(DM_IOCTL, DM_TABLE_LOAD_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:249:#define DM_TABLE_CLEAR   _IOWR(DM_IOCTL, DM_TABLE_CLEAR_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:250:#define DM_TABLE_DEPS    _IOWR(DM_IOCTL, DM_TABLE_DEPS_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:251:#define DM_TABLE_STATUS  _IOWR(DM_IOCTL, DM_TABLE_STATUS_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:253:#define DM_LIST_VERSIONS _IOWR(DM_IOCTL, DM_LIST_VERSIONS_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:255:#define DM_TARGET_MSG	 _IOWR(DM_IOCTL, DM_TARGET_MSG_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dm-ioctl.h:256:#define DM_DEV_SET_GEOMETRY	_IOWR(DM_IOCTL, DM_DEV_SET_GEOMETRY_CMD, struct dm_ioctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:312:#define KVM_GET_MSR_INDEX_LIST    _IOWR(KVMIO, 0x02, struct kvm_msr_list)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:324:#define KVM_GET_SUPPORTED_CPUID   _IOWR(KVMIO, 0x05, struct kvm_cpuid2)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:328:#define KVM_TRACE_ENABLE          _IOW(KVMIO, 0x06, struct kvm_user_trace_setup)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:352:#define KVM_SET_MEMORY_REGION     _IOW(KVMIO, 0x40, struct kvm_memory_region)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:355:#define KVM_SET_USER_MEMORY_REGION _IOW(KVMIO, 0x46,\
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:363:#define KVM_GET_DIRTY_LOG         _IOW(KVMIO, 0x42, struct kvm_dirty_log)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:364:#define KVM_SET_MEMORY_ALIAS      _IOW(KVMIO, 0x43, struct kvm_memory_alias)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:367:#define KVM_IRQ_LINE		  _IOW(KVMIO, 0x61, struct kvm_irq_level)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:368:#define KVM_GET_IRQCHIP		  _IOWR(KVMIO, 0x62, struct kvm_irqchip)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:371:#define KVM_GET_PIT		  _IOWR(KVMIO, 0x65, struct kvm_pit_state)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:379:#define KVM_SET_REGS              _IOW(KVMIO,  0x82, struct kvm_regs)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:381:#define KVM_SET_SREGS             _IOW(KVMIO,  0x84, struct kvm_sregs)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:382:#define KVM_TRANSLATE             _IOWR(KVMIO, 0x85, struct kvm_translation)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:383:#define KVM_INTERRUPT             _IOW(KVMIO,  0x86, struct kvm_interrupt)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:384:#define KVM_DEBUG_GUEST           _IOW(KVMIO,  0x87, struct kvm_debug_guest)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:385:#define KVM_GET_MSRS              _IOWR(KVMIO, 0x88, struct kvm_msrs)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:386:#define KVM_SET_MSRS              _IOW(KVMIO,  0x89, struct kvm_msrs)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:387:#define KVM_SET_CPUID             _IOW(KVMIO,  0x8a, struct kvm_cpuid)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:388:#define KVM_SET_SIGNAL_MASK       _IOW(KVMIO,  0x8b, struct kvm_signal_mask)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:390:#define KVM_SET_FPU               _IOW(KVMIO,  0x8d, struct kvm_fpu)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:392:#define KVM_SET_LAPIC             _IOW(KVMIO,  0x8f, struct kvm_lapic_state)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:393:#define KVM_SET_CPUID2            _IOW(KVMIO,  0x90, struct kvm_cpuid2)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:394:#define KVM_GET_CPUID2            _IOWR(KVMIO, 0x91, struct kvm_cpuid2)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:396:#define KVM_TPR_ACCESS_REPORTING  _IOWR(KVMIO,  0x92, struct kvm_tpr_access_ctl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:398:#define KVM_SET_VAPIC_ADDR        _IOW(KVMIO,  0x93, struct kvm_vapic_addr)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:400:#define KVM_S390_INTERRUPT        _IOW(KVMIO,  0x94, struct kvm_s390_interrupt)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:404:#define KVM_S390_STORE_STATUS	  _IOW(KVMIO,  0x95, unsigned long)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:406:#define KVM_S390_SET_INITIAL_PSW  _IOW(KVMIO,  0x96, struct kvm_s390_psw)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/kvm.h:410:#define KVM_SET_MP_STATE          _IOW(KVMIO,  0x99, struct kvm_mp_state)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/pmu.h:126:#define PMU_IOC_SET_BACKLIGHT	_IOW('B', 2, size_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1373:#define VIDIOC_ENUM_FMT         _IOWR ('V',  2, struct v4l2_fmtdesc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1374:#define VIDIOC_G_FMT		_IOWR ('V',  4, struct v4l2_format)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1375:#define VIDIOC_S_FMT		_IOWR ('V',  5, struct v4l2_format)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1376:#define VIDIOC_REQBUFS		_IOWR ('V',  8, struct v4l2_requestbuffers)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1377:#define VIDIOC_QUERYBUF		_IOWR ('V',  9, struct v4l2_buffer)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1379:#define VIDIOC_S_FBUF		_IOW  ('V', 11, struct v4l2_framebuffer)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1380:#define VIDIOC_OVERLAY		_IOW  ('V', 14, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1381:#define VIDIOC_QBUF		_IOWR ('V', 15, struct v4l2_buffer)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1382:#define VIDIOC_DQBUF		_IOWR ('V', 17, struct v4l2_buffer)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1383:#define VIDIOC_STREAMON		_IOW  ('V', 18, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1384:#define VIDIOC_STREAMOFF	_IOW  ('V', 19, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1385:#define VIDIOC_G_PARM		_IOWR ('V', 21, struct v4l2_streamparm)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1386:#define VIDIOC_S_PARM		_IOWR ('V', 22, struct v4l2_streamparm)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1388:#define VIDIOC_S_STD		_IOW  ('V', 24, v4l2_std_id)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1389:#define VIDIOC_ENUMSTD		_IOWR ('V', 25, struct v4l2_standard)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1390:#define VIDIOC_ENUMINPUT	_IOWR ('V', 26, struct v4l2_input)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1391:#define VIDIOC_G_CTRL		_IOWR ('V', 27, struct v4l2_control)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1392:#define VIDIOC_S_CTRL		_IOWR ('V', 28, struct v4l2_control)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1393:#define VIDIOC_G_TUNER		_IOWR ('V', 29, struct v4l2_tuner)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1394:#define VIDIOC_S_TUNER		_IOW  ('V', 30, struct v4l2_tuner)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1396:#define VIDIOC_S_AUDIO		_IOW  ('V', 34, struct v4l2_audio)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1397:#define VIDIOC_QUERYCTRL	_IOWR ('V', 36, struct v4l2_queryctrl)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1398:#define VIDIOC_QUERYMENU	_IOWR ('V', 37, struct v4l2_querymenu)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1400:#define VIDIOC_S_INPUT		_IOWR ('V', 39, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1402:#define VIDIOC_S_OUTPUT		_IOWR ('V', 47, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1403:#define VIDIOC_ENUMOUTPUT	_IOWR ('V', 48, struct v4l2_output)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1405:#define VIDIOC_S_AUDOUT		_IOW  ('V', 50, struct v4l2_audioout)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1406:#define VIDIOC_G_MODULATOR	_IOWR ('V', 54, struct v4l2_modulator)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1407:#define VIDIOC_S_MODULATOR	_IOW  ('V', 55, struct v4l2_modulator)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1408:#define VIDIOC_G_FREQUENCY	_IOWR ('V', 56, struct v4l2_frequency)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1409:#define VIDIOC_S_FREQUENCY	_IOW  ('V', 57, struct v4l2_frequency)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1410:#define VIDIOC_CROPCAP		_IOWR ('V', 58, struct v4l2_cropcap)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1411:#define VIDIOC_G_CROP		_IOWR ('V', 59, struct v4l2_crop)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1412:#define VIDIOC_S_CROP		_IOW  ('V', 60, struct v4l2_crop)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1414:#define VIDIOC_S_JPEGCOMP	_IOW  ('V', 62, struct v4l2_jpegcompression)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1416:#define VIDIOC_TRY_FMT      	_IOWR ('V', 64, struct v4l2_format)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1417:#define VIDIOC_ENUMAUDIO	_IOWR ('V', 65, struct v4l2_audio)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1418:#define VIDIOC_ENUMAUDOUT	_IOWR ('V', 66, struct v4l2_audioout)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1420:#define VIDIOC_S_PRIORITY       _IOW  ('V', 68, enum v4l2_priority)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1421:#define VIDIOC_G_SLICED_VBI_CAP _IOWR ('V', 69, struct v4l2_sliced_vbi_cap)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1423:#define VIDIOC_G_EXT_CTRLS	_IOWR ('V', 71, struct v4l2_ext_controls)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1424:#define VIDIOC_S_EXT_CTRLS	_IOWR ('V', 72, struct v4l2_ext_controls)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1425:#define VIDIOC_TRY_EXT_CTRLS	_IOWR ('V', 73, struct v4l2_ext_controls)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1427:#define VIDIOC_ENUM_FRAMESIZES	_IOWR ('V', 74, struct v4l2_frmsizeenum)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1428:#define VIDIOC_ENUM_FRAMEINTERVALS	_IOWR ('V', 75, struct v4l2_frmivalenum)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1430:#define VIDIOC_ENCODER_CMD      _IOWR ('V', 77, struct v4l2_encoder_cmd)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1431:#define VIDIOC_TRY_ENCODER_CMD  _IOWR ('V', 78, struct v4l2_encoder_cmd)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1434:#define	VIDIOC_DBG_S_REGISTER 	_IOW  ('V', 79, struct v4l2_register)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1435:#define	VIDIOC_DBG_G_REGISTER 	_IOWR ('V', 80, struct v4l2_register)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1437:#define VIDIOC_G_CHIP_IDENT     _IOWR ('V', 81, struct v4l2_chip_ident)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1442:#define VIDIOC_OVERLAY_OLD     	_IOWR ('V', 14, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1443:#define VIDIOC_S_PARM_OLD      	_IOW  ('V', 22, struct v4l2_streamparm)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1444:#define VIDIOC_S_CTRL_OLD      	_IOW  ('V', 28, struct v4l2_control)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1445:#define VIDIOC_G_AUDIO_OLD     	_IOWR ('V', 33, struct v4l2_audio)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev2.h:1446:#define VIDIOC_G_AUDOUT_OLD    	_IOWR ('V', 49, struct v4l2_audioout)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:233:#define VIDIOCGCHAN		_IOWR('v',2,struct video_channel)	/* Get channel info (sources) */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:234:#define VIDIOCSCHAN		_IOW('v',3,struct video_channel)	/* Set channel 	*/
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:235:#define VIDIOCGTUNER		_IOWR('v',4,struct video_tuner)		/* Get tuner abilities */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:236:#define VIDIOCSTUNER		_IOW('v',5,struct video_tuner)		/* Tune the tuner for the current channel */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:238:#define VIDIOCSPICT		_IOW('v',7,struct video_picture)	/* Set picture properties */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:239:#define VIDIOCCAPTURE		_IOW('v',8,int)				/* Start, end capture */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:241:#define VIDIOCSWIN		_IOW('v',10, struct video_window)	/* Set the video overlay window - passes clip list for hardware smarts , chromakey etc */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:243:#define VIDIOCSFBUF		_IOW('v',12, struct video_buffer)	/* Set frame buffer - root only */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:246:#define VIDIOCSFREQ		_IOW('v',15, unsigned long)		/* Set tuner */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:248:#define VIDIOCSAUDIO		_IOW('v',17, struct video_audio)	/* Audio source, mute etc */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:249:#define VIDIOCSYNC		_IOW('v',18, int)			/* Sync with mmap grabbing */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:250:#define VIDIOCMCAPTURE		_IOW('v',19, struct video_mmap)		/* Grab frames */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:254:#define VIDIOCSCAPTURE		_IOW('v',23, struct video_capture)	/* Set subcapture */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:255:#define VIDIOCSPLAYMODE		_IOW('v',24, struct video_play_mode)	/* Set output video mode/feature */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:256:#define VIDIOCSWRITEMODE	_IOW('v',25, int)			/* Set write mode */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:258:#define VIDIOCSMICROCODE	_IOW('v',27, struct video_code)		/* Load microcode into hardware */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/videodev.h:260:#define	VIDIOCSVBIFMT		_IOW('v',29, struct vbi_format)		/* Set VBI information */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/msdos_fs.h:99:#define FAT_IOCTL_SET_ATTRIBUTES	_IOW('r', 0x11, __u32)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/soundcard.h:82:#if defined(_IOWR) && (defined(_AIX) || (!defined(sun) && !defined(sparc) && !defined(__sparc__) && !defined(__INCioctlh) && !defined(__Lynx__)))
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/soundcard.h:96:#define	_SIOW		_IOW
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/soundcard.h:97:#define	_SIOWR		_IOWR
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/soundcard.h:123:#  endif /* _IOWR */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/atm_he.h:8:#define HE_GET_REG	_IOW('a', ATMIOC_SARPRV, struct atmif_sioc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/agpgart.h:34:#define AGPIOC_SETUP      _IOW (AGPIOC_BASE, 3, struct agp_setup*)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/agpgart.h:35:#define AGPIOC_RESERVE    _IOW (AGPIOC_BASE, 4, struct agp_region*)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/agpgart.h:36:#define AGPIOC_PROTECT    _IOW (AGPIOC_BASE, 5, struct agp_region*)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/agpgart.h:37:#define AGPIOC_ALLOCATE   _IOWR(AGPIOC_BASE, 6, struct agp_allocate*)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/agpgart.h:38:#define AGPIOC_DEALLOCATE _IOW (AGPIOC_BASE, 7, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/agpgart.h:39:#define AGPIOC_BIND       _IOW (AGPIOC_BASE, 8, struct agp_bind*)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/agpgart.h:40:#define AGPIOC_UNBIND     _IOW (AGPIOC_BASE, 9, struct agp_unbind*)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dn.h:142:#define SIOCSNETADDR  _IOW(DECNET_IOCTL_BASE, 0xe0, struct dn_naddr)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/dn.h:144:#define OSIOCSNETADDR _IOW(DECNET_IOCTL_BASE, 0xe0, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_pppox.h:75:#define PPPOEIOCSFWD	_IOW(0xB1 ,0, size_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/if_pppox.h:77:/*#define PPPOEIOCGFWD	_IOWR(0xB1,2, size_t)*/
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_decoder.h:34:#define	DECODER_SET_NORM	_IOW('d', 3, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_decoder.h:35:#define	DECODER_SET_INPUT	_IOW('d', 4, int)	/* 0 <= input < #inputs */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_decoder.h:36:#define	DECODER_SET_OUTPUT	_IOW('d', 5, int)	/* 0 <= output < #outputs */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_decoder.h:37:#define	DECODER_ENABLE_OUTPUT	_IOW('d', 6, int)	/* boolean output enable control */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_decoder.h:38:#define	DECODER_SET_PICTURE   	_IOW('d', 7, struct video_picture)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_decoder.h:39:#define	DECODER_SET_GPIO	_IOW('d', 8, int)	/* switch general purpose pin */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_decoder.h:40:#define	DECODER_INIT		_IOW('d', 9, struct video_decoder_init)	/* init internal registers at once */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/video_decoder.h:41:#define	DECODER_SET_VBI_BYPASS	_IOW('d', 10, int)	/* switch vbi bypass */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/synclink.h:273:#define MGSL_IOCSPARAMS		_IOW(MGSL_MAGIC_IOC,0,struct _MGSL_PARAMS)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/synclink.h:281:#define MGSL_IOCWAITEVENT	_IOWR(MGSL_MAGIC_IOC,8,int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/synclink.h:286:#define MGSL_IOCSGPIO		_IOW(MGSL_MAGIC_IOC,16,struct gpio_desc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/synclink.h:288:#define MGSL_IOCWAITGPIO	_IOWR(MGSL_MAGIC_IOC,18,struct gpio_desc)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/suspend_ioctls.h:21:#define SNAPSHOT_SET_SWAP_AREA		_IOW(SNAPSHOT_IOC_MAGIC, 13, \
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/suspend_ioctls.h:26:#define SNAPSHOT_CREATE_IMAGE		_IOW(SNAPSHOT_IOC_MAGIC, 17, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/sonet.h:31:#define SONET_SETDIAG	_IOWR('a',ATMIOC_PHYTYP+2,int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/sonet.h:33:#define SONET_CLRDIAG	_IOWR('a',ATMIOC_PHYTYP+3,int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/joystick.h:66:#define JSIOCSCORR		_IOW('j', 0x21, struct js_corr)			/* set correction values */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/joystick.h:69:#define JSIOCSAXMAP		_IOW('j', 0x31, __u8[ABS_MAX + 1])		/* set axis mapping */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/joystick.h:71:#define JSIOCSBTNMAP		_IOW('j', 0x33, __u16[KEY_MAX - BTN_MISC + 1])	/* set button mapping */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/meye.h:49:#define MEYEIOC_S_PARAMS	_IOW ('v', BASE_VIDIOCPRIVATE+1, struct meye_params)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/meye.h:51:#define MEYEIOC_QBUF_CAPT	_IOW ('v', BASE_VIDIOCPRIVATE+2, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/linux/meye.h:53:#define MEYEIOC_SYNC		_IOWR('v', BASE_VIDIOCPRIVATE+3, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/rdma/ib_user_mad.h:198:#define IB_USER_MAD_REGISTER_AGENT	_IOWR(IB_IOCTL_MAGIC, 1, \
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/rdma/ib_user_mad.h:201:#define IB_USER_MAD_UNREGISTER_AGENT	_IOW(IB_IOCTL_MAGIC, 2, __u32)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/asm-generic/ioctl.h:81:#define _IOW(type,nr,size)	_IOC(_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/asm-generic/ioctl.h:82:#define _IOWR(type,nr,size)	_IOC(_IOC_READ|_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/asm-generic/ioctl.h:84:#define _IOW_BAD(type,nr,size)	_IOC(_IOC_WRITE,(type),(nr),sizeof(size))
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/asm-generic/ioctl.h:85:#define _IOWR_BAD(type,nr,size)	_IOC(_IOC_READ|_IOC_WRITE,(type),(nr),sizeof(size))
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/ubi-user.h:102:#define UBI_IOCMKVOL _IOW(UBI_IOC_MAGIC, 0, struct ubi_mkvol_req)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/ubi-user.h:104:#define UBI_IOCRMVOL _IOW(UBI_IOC_MAGIC, 1, int32_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/ubi-user.h:106:#define UBI_IOCRSVOL _IOW(UBI_IOC_MAGIC, 2, struct ubi_rsvol_req)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/ubi-user.h:113:#define UBI_IOCATT _IOW(UBI_CTRL_IOC_MAGIC, 64, struct ubi_attach_req)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/ubi-user.h:115:#define UBI_IOCDET _IOW(UBI_CTRL_IOC_MAGIC, 65, int32_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/ubi-user.h:122:#define UBI_IOCVOLUP _IOW(UBI_VOL_IOC_MAGIC, 0, int64_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/ubi-user.h:124:#define UBI_IOCEBER _IOW(UBI_VOL_IOC_MAGIC, 1, int32_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/ubi-user.h:126:#define UBI_IOCEBCH _IOW(UBI_VOL_IOC_MAGIC, 2, int32_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/mtd-abi.h:80:#define MEMERASE		_IOW('M', 2, struct erase_info_user)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/mtd-abi.h:81:#define MEMWRITEOOB		_IOWR('M', 3, struct mtd_oob_buf)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/mtd-abi.h:82:#define MEMREADOOB		_IOWR('M', 4, struct mtd_oob_buf)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/mtd-abi.h:83:#define MEMLOCK			_IOW('M', 5, struct erase_info_user)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/mtd-abi.h:84:#define MEMUNLOCK		_IOW('M', 6, struct erase_info_user)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/mtd-abi.h:86:#define MEMGETREGIONINFO	_IOWR('M', 8, struct region_info_user)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/mtd-abi.h:87:#define MEMSETOOBSEL		_IOW('M', 9, struct nand_oobinfo)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/mtd-abi.h:89:#define MEMGETBADBLOCK		_IOW('M', 11, loff_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/mtd-abi.h:90:#define MEMSETBADBLOCK		_IOW('M', 12, loff_t)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/mtd-abi.h:92:#define OTPGETREGIONCOUNT	_IOW('M', 14, int)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/mtd/mtd-abi.h:93:#define OTPGETREGIONINFO	_IOW('M', 15, struct otp_info)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/video/sisfb.h:166:#define SISFB_SET_AUTOMAXIMIZE	_IOW(0xF3,0x03,__u32)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/video/sisfb.h:170:#define SISFB_SET_TVPOSOFFSET	_IOW(0xF3,0x04,__u32)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/video/sisfb.h:173:#define SISFB_COMMAND		_IOWR(0xF3,0x05,struct sisfb_cmd)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/video/sisfb.h:179:#define SISFB_SET_LOCK		_IOW(0xF3,0x06,__u32)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/video/sisfb.h:192:#define SISFB_SET_AUTOMAXIMIZE_OLD _IOW('n',0xFA,__u32)
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sys/mtio.h:198:#define	MTIOCTOP	_IOW('m', 1, struct mtop)	/* Do a mag tape op. */
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sys/mtio.h:205:#define	MTIOCSETCONFIG	_IOW('m', 5, struct mtconfiginfo) /* Set tape config.*/
+/usr/local/arm/4.3.2/arm-none-linux-gnueabi/libc/usr/include/sys/mount.h:92:#define BLKBSZSET  _IOW(0x12,113,size_t)
